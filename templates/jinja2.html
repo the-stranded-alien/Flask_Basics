@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Friends</h1>
+    
+    {% if number > 10 %}
+    <p> {{number}} is Greater than 10</p>
+    {% else %}
+    <p> {{number}} is Smaller than 10</p>
+    {% endif %}
+    
+    {% for f in my_friends %} 
+        
+    <h2> {{f}} </h2>
+    
+    {% endfor %}
+
+</body>
+</html>
